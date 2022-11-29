@@ -1,0 +1,65 @@
+<!--
+    Creator : Anson Cheang
+    Contact : Anson0906@gmail.com
+    Description : This is just the skeleton of the code
+    also contains the form needed to input in the maximum
+    and minimum
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>multiplication table</title>
+    <meta charset = "utf-8">
+    <link href = "../CSS/design.css" rel = "stylesheet">
+	<script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src = "https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src = "https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel = "stylesheet">
+    
+    <script src = "../JAVASCRIPT/command.js"></script>
+</head>
+<body>
+    <div id = "form">
+        <form id = "Aform" action = "" method = "post">
+            <p>
+                <label for = "hmin">Minimum value of x (-50 to 50)</label>
+                <input id = "hmin" name = "hmin" value = 0>
+                <div id="my_slider1"></div>
+            </p>
+            <p>
+                <label for = "hmax">Maximum value of x (-50 to 50)</label>
+                <input id = "hmax" name = "hmax" value = 0>
+                <div id="my_slider2"></div>
+            </p>
+            <p>
+                <label for = "vmin">Minimum value of y (-50 to 50)</label>
+                <input id = "vmin" name = "vmin" value = 0>
+                <div id="my_slider3"></div>
+            </p>
+            <p>
+                <label for = "vmax">Maximum value of y (-50 to 50)</label>
+                <input id = "vmax" name = "vmax" value = 0>
+                <div id="my_slider4"></div>
+            </p>
+            <p>
+                <button type = "button" id = "btn1"> Create Tab </button>
+                <button type = "button" id = "btn2"> Remove Tab </button>
+            </p>
+        </form>
+    </div>
+    <p>To delete tab(s), please check the tabs you want to delete, then click the Remove Tab button</p>
+    <div id = "graph">
+        <ul id = "alltabs">
+            <li><a href ="#current">current</a></li>
+        </ul>
+        <div id = "current">
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+/*
+    Creator : Anson Cheang
+    Contact : Anson0906@gmail.com
+    Source : TA, W3schools
+    Description : This is just styling
+    also used to create scolling for just
+    the table, and movable first row and 
+    collumn
+*/
+
+div{
+    display: block;
+}
+
+#form{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    line-height: 30px;
+    border-style: double;
+}
+
+#graph{
+    overflow: auto;
+    height: 300px;
+}
+
+tr:nth-child(2n){
+    background-color: red;
+}
+tr:nth-child(2n+1)
+{
+    background-color: lime;
+}
+tr:first-child{
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+}
+
+th{
+    min-width: 100px;
+}
+
+th:first-child{
+    background-color: yellow;
+    position: sticky;
+    left: 0;
+}
+
+#topleft{
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+form .error{
+    color: red;
+}

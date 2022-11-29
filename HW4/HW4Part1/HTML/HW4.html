@@ -1,0 +1,50 @@
+<!--
+    Creator : Anson Cheang
+    Contact : Anson0906@gmail.com
+    Description : This is just the skeleton of the code
+    also contains the form needed to input in the maximum
+    and minimum, Then it was changed for the validate function
+    and some code was removed
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>multiplication table</title>
+    <meta charset = "utf-8">
+    <link href = "../CSS/design.css" rel = "stylesheet">
+	<script src = "https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src = "../JAVASCRIPT/command.js"></script>
+</head>
+<body>
+    <div id = "form">
+        <form id = "Aform" action = "" method = "post">
+            <p>
+                <label for = "hmin">Minimum value of x (-50 to 50)</label>
+                <input id = "hmin" name = "hmin">
+            </p>
+            <p>
+                <label for = "hmax">Maximum value of x (-50 to 50)</label>
+                <input id = "hmax" name = "hmax">
+            </p>
+            <p>
+                <label for = "vmin">Minimum value of y (-50 to 50)</label>
+                <input id = "vmin" name = "vmin">
+            </p>
+            <p>
+                <label for = "vmax">Maximum value of y (-50 to 50)</label>
+                <input id = "vmax" name = "vmax">
+            </p>
+            <p>
+                <button type = "button" id = "btn1"> Submit </button>
+            </p>
+        </form>
+    </div>
+    <p id = "graph">
+    </p>
+
+</body>
+
+</html>
